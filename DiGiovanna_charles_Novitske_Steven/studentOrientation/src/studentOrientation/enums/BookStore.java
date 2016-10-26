@@ -1,4 +1,4 @@
-package student;
+package studentOrientation.enums;
 
 public enum BookStore {
     mandoBooks (Duration.mandoBooks,
