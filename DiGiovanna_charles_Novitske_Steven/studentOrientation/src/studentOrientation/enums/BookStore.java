@@ -1,4 +1,4 @@
-package student
+package student;
 
 public enum BookStore {
     mandoBooks (Duration.mandoBooks,
