@@ -1,5 +1,10 @@
 package studentOrientation.enums;
 
+import studentOrientation.attributes.Duration;
+import studentOrientation.attributes.Cost;
+import studentOrientation.attributes.CarbonFootprint;
+import studentOrientation.attributes.Effort;
+
 public enum Registration {
   registrar (Duration.registrar,
             Cost.registrar,

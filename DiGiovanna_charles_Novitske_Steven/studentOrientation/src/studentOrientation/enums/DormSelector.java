@@ -1,9 +1,9 @@
 package studentOrientation.enums;
 
-import studentOrientation.enums.CampusTour;
-import studentOrientation.enums.DormSelector;
-import studentOrientation.enums.BookStore;
-import studentOrientation.enums.Registration;
+import studentOrientation.attributes.Duration;
+import studentOrientation.attributes.Cost;
+import studentOrientation.attributes.CarbonFootprint;
+import studentOrientation.attributes.Effort;
 
 public enum DormSelector {
     standOutside(Duration.standOutside,

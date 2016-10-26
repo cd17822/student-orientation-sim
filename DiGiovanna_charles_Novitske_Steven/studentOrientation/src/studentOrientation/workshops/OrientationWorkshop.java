@@ -1,4 +1,5 @@
 package studentOrientation.workshops;
+
 import studentOrientation.activites.Activity;
 
 public class OrientationWorkshop implements OrientationWorkshopI {
