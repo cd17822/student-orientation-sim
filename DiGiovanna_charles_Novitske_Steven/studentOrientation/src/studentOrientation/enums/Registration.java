@@ -1,4 +1,4 @@
-package student;
+package studentOrientation.enums;
 
 public enum Registration {
   registrar (Duration.registrar,
@@ -22,5 +22,4 @@ public enum Registration {
     cost = costIn;
     effort = effortIn;
   }
-}
 }
