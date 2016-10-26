@@ -1,36 +1,46 @@
-package studentOrientation.orientions
+package studentOrientation.orientations;
 
-public class BUOrientation implements Orientation {
+import studentOrientation.enums.CampusTour;
+import studentOrientation.enums.DormSelector;
+import studentOrientation.enums.BookStore;
+import studentOrientation.enums.Registration;
+
+public class BUOrientation implements OrientationI {
+    private CampusTour campusTour;
+    private DormSelector dormSelector;
+    private BookStore bookStore;
+    private Registration registration;
+
     private double duration;
     private double carbonFootprint;
     private double cost;
     private double effort;
 
-    public void tourCampus(CampusTour c) {
-        duration += c.duration;
-        carbonFootprint += c.carbonFootprint;
-        cost += c.cost;
-        effort += c.effort;
+    public void tourCampus() {
+        duration += campusTour.duration;
+        carbonFootprint += campusTour.carbonFootprint;
+        cost += campusTour.cost;
+        effort += campusTour.effort;
     }
 
-    public void selectDorm(DormSelector d) {
-        duration += d.duration;
-        carbonFootprint += d.carbonFootprint;
-        cost += d.cost;
-        effort += d.effort;
+    public void selectDorm() {
+        duration += dormSelector.duration;
+        carbonFootprint += dormSelector.carbonFootprint;
+        cost += dormSelector.cost;
+        effort += dormSelector.effort;
     }
 
-    public void buyBooks(BookStore b) {
-        duration += b.duration;
-        carbonFootprint += b.carbonFootprint;
-        cost += b.cost;
-        effort += b.effort;
+    public void buyBooks() {
+        duration += bookStore.duration;
+        carbonFootprint += bookStore.carbonFootprint;
+        cost += bookStore.cost;
+        effort += bookStore.effort;
     }
 
-    public void registerClasses(Registration r) {
-        duration += r.duration;
-        carbonFootprint += r.carbonFootprint;
-        cost += r.cost;
-        effort += r.effort;
+    public void registerClasses() {
+        duration += registration.duration;
+        carbonFootprint += registration.carbonFootprint;
+        cost += registration.cost;
+        effort += registration.effort;
     }
 }
