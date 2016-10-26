@@ -9,7 +9,7 @@ public enum Registration {
   computerLab (Duration.computerLab,
               Cost.computerLab,
               CarbonFootprint.computerLab,
-              Effort.computerLab),
+              Effort.computerLab);
 
   private final double duration;
   private final double carbonFootprint;
