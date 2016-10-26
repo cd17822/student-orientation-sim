@@ -1,16 +1,29 @@
-public enum CourseAnalysis {
-    cs240 (4, 81.5, 55),
-    cs342 (4, 84.3, 35),
-    cs654 (3, 79.8, 41);  // semi colon here
+package student
 
-    private final int numCredits;
-    private final double avgScore;
-    private final int numStudents;
-    private static final double NO_OF_EXAMS = 3;
+public enum BookStore {
+    mandoBooks (Duration.mandoBooks,
+                Cost.mandoBooks,
+                CarbonFootprint.mandoBooks,
+                Effort.mandoBooks),
 
-  // Constructor
-    CourseAnalysis(int numCreditsIn, double avgScoreIn, int numStudentsIn) {
-    numCredits = numCreditsIn;
-    avgScore = avgScoreIn;
-    numStudents = numStudentsIn;
+    buBookStore(Duration.buBookStore,
+                Cost.buBookStore,
+                CarbonFootprint.buBookStore,
+                Effort.buBookStore);
+
+    public final double duration;
+    public final double cost;
+    public final double carbonFootprint;
+    public final double effort;
+
+    // Constructor
+    BookStore(double durationIn,
+                   double costIn,
+                   double carbonFootprintIn,
+                   double effortIn) {
+        duration = durationIn;
+        cost = costIn;
+        carbonFootprint = carbonFootprintIn;
+        effort = effortIn;
     }
+}
