@@ -29,3 +29,11 @@ Each has
 Note that each activity should have an interface.
 Note that time duration, carboon footprint, and cost should also have interfaces.
 Use Enums, to the extent possible, to specify user choices.
+
+
+Driver code:
+
+Orientation student1 = new Orientation(MANDO_BOOKS, ON_FOOT, GAMING_CONTEST, SUBMIT_FORMS);
+
+OrientationWorkshopInterface shop = new OrientationWorkshop();
+shop.construct(student1);
