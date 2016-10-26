@@ -25,3 +25,7 @@ Each has
 - carbon footprint (CO2 tons)
 - effort (calories)
 
+**
+Note that each activity should have an interface.
+Note that time duration, carboon footprint, and cost should also have interfaces.
+Use Enums, to the extent possible, to specify user choices.
