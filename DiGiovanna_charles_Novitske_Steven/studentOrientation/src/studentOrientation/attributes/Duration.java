@@ -1,6 +1,8 @@
 package studentOrientation.attributes;
 
 public interface Duration {
+  public double getDurationMinutes(Activities activityIn);
+  /*
     // CampusTour
     public static double busRide = 45;
     public static double onFoot = 90;
@@ -16,4 +18,5 @@ public interface Duration {
     // Registration
     public static double registrar = 15;
     public static double computerLab = 15;
+  */
 }

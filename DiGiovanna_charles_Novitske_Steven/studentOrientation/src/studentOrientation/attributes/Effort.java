@@ -1,6 +1,8 @@
 package studentOrientation.attributes;
 
 public interface Effort {
+  public double getEffortCalories(Activities activityIn);
+  /*
     // CampusTour
     public static double busRide = 5;
     public static double onFoot = 250;
@@ -16,4 +18,5 @@ public interface Effort {
     // Registration
     public static double registrar = 25;
     public static double computerLab = 15;
+  */
 }

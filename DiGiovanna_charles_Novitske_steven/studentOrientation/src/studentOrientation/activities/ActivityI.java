@@ -1,5 +1,3 @@
 package studentOrientation.activities;
 
-public interface ActivityI {
-
-}
+public interface ActivityI {}
