@@ -21,6 +21,11 @@ public enum CampusTour {
   private final double cost;
   private final double effort;
 
+  public double getDuration() { return duration; }
+  public double getCarbonFootprint() { return carbonFootprint; }
+  public double getCost() { return cost; }
+  public double getEffort() { return effort; }
+
   CampusTour(double durationIn, double costIn, double footprintIn, double effortIn) {
     duration = durationIn;
     carbonFootprint = footprintIn;

@@ -14,6 +14,6 @@ public interface Cost {
     public static double gamingContest = standOutside * 1.02;
 
     // Registration
-    public static double registrar = computerLab * 0.97;
     public static double computerLab = 150;
+    public static double registrar = computerLab * 0.97;
 }

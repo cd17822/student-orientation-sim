@@ -16,10 +16,15 @@ public enum DormSelector {
                   CarbonFootprint.gamingContest,
                   Effort.gamingContest);
 
-    public final double duration;
-    public final double cost;
-    public final double carbonFootprint;
-    public final double effort;
+    private final double duration;
+    private final double carbonFootprint;
+    private final double cost;
+    private final double effort;
+
+    public double getDuration() { return duration; }
+    public double getCarbonFootprint() { return carbonFootprint; }
+    public double getCost() { return cost; }
+    public double getEffort() { return effort; }
 
     // Constructor
     DormSelector(double durationIn,
