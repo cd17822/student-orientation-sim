@@ -1,7 +1,7 @@
 <project name="studentOrientation" default="compile_all" basedir="..">
 
     <property name="BUILD.compiler" value="modern"/>
-    <property name="src" value="src"/>
+    <property name="src" value="studentOrientation/src"/>
     <property name="BUILD" value="BUILD"/>
     <property name="classes" value="${BUILD}/classes"/>
 

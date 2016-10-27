@@ -1,9 +1,10 @@
 package studentOrientation.workshops;
 
-import studentOrientation.activites.Activity;
+import studentOrientation.activities.ActivityI;
+import studentOrientation.orientations.OrientationI;
 
 public class OrientationWorkshop implements OrientationWorkshopI {
-  public void construct(Orientation o) {
+  public void construct(OrientationI o) {
     o.tourCampus();
     o.selectDorm();
     o.buyBooks();
