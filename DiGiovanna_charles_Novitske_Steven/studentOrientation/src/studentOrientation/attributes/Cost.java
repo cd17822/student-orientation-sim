@@ -1,18 +1,22 @@
 package studentOrientation.attributes;
 
+import studentOrientation.util.Logger;
 import studentOrientation.enums.BookStore;
 import studentOrientation.enums.CampusTour;
 import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public class Cost implements CostI {
-  double value;
+  double value = 0;
+
   public Cost() {
-    value = 0;
+    Logger.writeMessage("Cost constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
+
   public String toStringDollars() {
     return String.format("$%.2f", value) + " USD";
   }
+
   public void addCostDollars(BookStore bookStoreIn) {
     double mandoPrice = 200;
     if(bookStoreIn == BookStore.mandoBooks) { value += mandoPrice; }

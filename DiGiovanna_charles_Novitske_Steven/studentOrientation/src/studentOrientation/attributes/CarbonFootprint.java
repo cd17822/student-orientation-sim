@@ -1,14 +1,16 @@
 package studentOrientation.attributes;
 
+import studentOrientation.util.Logger;
 import studentOrientation.enums.BookStore;
 import studentOrientation.enums.CampusTour;
 import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public class CarbonFootprint implements CarbonFootprintI {
-  double value;
+  double value = 0;
+
   public CarbonFootprint() {
-    value = 0;
+    Logger.writeMessage("CarbonFootprint constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
 
   public String toStringTonnes() {

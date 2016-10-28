@@ -1,18 +1,22 @@
 package studentOrientation.attributes;
 
+import studentOrientation.util.Logger;
 import studentOrientation.enums.BookStore;
 import studentOrientation.enums.CampusTour;
 import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public class Duration implements DurationI {
-  double value;
+  double value = 0;
+
   public Duration() {
-    value = 0;
+    Logger.writeMessage("Duration constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
+
   public String toStringMinutes() {
     return value + " minutes";
   }
+
   public void addDurationMinutes(BookStore bookStoreIn) {
     if(bookStoreIn == BookStore.mandoBooks) { value += 15; }
     else if(bookStoreIn == BookStore.buBookStore) { value += 25; }

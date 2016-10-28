@@ -1,5 +1,6 @@
 package studentOrientation.activities;
 
+import studentOrientation.util.Logger;
 import studentOrientation.activities.RegisterClassesI;
 import studentOrientation.enums.Registration;
 import studentOrientation.attributes.DurationI;
@@ -20,6 +21,8 @@ public class RegisterClasses implements RegisterClassesI {
                       DurationI durationIn,
                       CarbonFootprintI carbonFootprintIn,
                       EffortI effortIn) {
+        Logger.writeMessage("RegisterClasses constructed\n", Logger.DebugLevel.CONSTRUCTOR);
+
         registration = registrationIn;
         cost = costIn;
         duration = durationIn;

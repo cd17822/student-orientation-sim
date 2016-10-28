@@ -1,5 +1,6 @@
 package studentOrientation.activities;
 
+import studentOrientation.util.Logger;
 import studentOrientation.activities.TourCampusI;
 import studentOrientation.enums.CampusTour;
 import studentOrientation.attributes.DurationI;
@@ -20,6 +21,8 @@ public class TourCampus implements TourCampusI {
                       DurationI durationIn,
                       CarbonFootprintI carbonFootprintIn,
                       EffortI effortIn) {
+        Logger.writeMessage("TourCampus constructed\n", Logger.DebugLevel.CONSTRUCTOR);
+
         campusTour = campusTourIn;
         cost = costIn;
         duration = durationIn;

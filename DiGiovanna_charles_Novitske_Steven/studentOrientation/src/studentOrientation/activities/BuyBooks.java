@@ -1,5 +1,5 @@
 package studentOrientation.activities;
-
+import studentOrientation.util.Logger;
 import studentOrientation.activities.BuyBooksI;
 import studentOrientation.enums.BookStore;
 import studentOrientation.attributes.DurationI;
@@ -20,6 +20,8 @@ public class BuyBooks implements BuyBooksI {
                       DurationI durationIn,
                       CarbonFootprintI carbonFootprintIn,
                       EffortI effortIn) {
+        Logger.writeMessage("BuyBooks constructed\n", Logger.DebugLevel.CONSTRUCTOR);
+
         bookStore = bookStoreIn;
         cost = costIn;
         duration = durationIn;

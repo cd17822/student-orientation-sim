@@ -1,5 +1,6 @@
 package studentOrientation.activities;
 
+import studentOrientation.util.Logger;
 import studentOrientation.activities.SelectDormI;
 import studentOrientation.enums.DormSelector;
 import studentOrientation.attributes.DurationI;
@@ -20,6 +21,8 @@ public class SelectDorm implements SelectDormI {
                       DurationI durationIn,
                       CarbonFootprintI carbonFootprintIn,
                       EffortI effortIn) {
+        Logger.writeMessage("SelectDorm constructed\n", Logger.DebugLevel.CONSTRUCTOR);
+
         dormSelector = dormSelectorIn;
         cost = costIn;
         duration = durationIn;

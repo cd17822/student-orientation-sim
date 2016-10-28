@@ -1,18 +1,22 @@
 package studentOrientation.attributes;
 
+import studentOrientation.util.Logger;
 import studentOrientation.enums.BookStore;
 import studentOrientation.enums.CampusTour;
 import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public class Effort implements EffortI {
-  double value;
+  double value = 0;
+
   public Effort() {
-    value = 0;
+    Logger.writeMessage("Effort constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
+
   public String toStringCalories() {
     return value + " calories";
   }
+
   public void addEffortCalories(BookStore bookStoreIn) {
     if(bookStoreIn == BookStore.mandoBooks) { value += 30; }
     else if(bookStoreIn == BookStore.buBookStore) { value += 30; }

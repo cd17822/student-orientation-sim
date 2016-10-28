@@ -3,7 +3,7 @@ package studentOrientation.util;
 public class Logger{
 
     public static enum DebugLevel {
-        CONSTRUCTOR, THREADRUN, ADDTORESULTS, STORECONTENT, NONE
+        NONE, CONSTRUCTOR
     };
 
     private static DebugLevel debugLevel;
@@ -13,11 +13,8 @@ public class Logger{
      */
     public static void setDebugValue (int levelIn) {
         switch(levelIn) {
-           case 4: debugLevel = DebugLevel.CONSTRUCTOR; break;
-           case 3: debugLevel = DebugLevel.THREADRUN; break;
-           case 2: debugLevel = DebugLevel.ADDTORESULTS; break;
-           case 1: debugLevel = DebugLevel.STORECONTENT; break;
-           case 0: debugLevel = DebugLevel.NONE; break;
+           case 1  : debugLevel = DebugLevel.CONSTRUCTOR; break;
+           default : debugLevel = DebugLevel.NONE; break;
         }
     }
 
