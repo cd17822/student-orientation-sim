@@ -11,10 +11,10 @@ public class BUOrientation implements OrientationI {
     private BookStore bookStore;
     private Registration registration;
 
-    private double duration;
-    private double carbonFootprint;
-    private double cost;
-    private double effort;
+    private Duration duration;
+    private CarbonFootprint carbonFootprint;
+    private Cost cost;
+    private Effort effort;
 
     public BUOrientation(BookStore storeIn,
                          CampusTour tourIn,
@@ -24,7 +24,11 @@ public class BUOrientation implements OrientationI {
        dormSelector = dormIn;
        bookStore = storeIn;
        registration = regIn;
-       //Use choose_____() here instead to assign values
+       duration = new Duration();
+       carbonFootprint = new CarbonFootprint();
+       cost = new Cost();
+       effort = new Effort();
+
     }
 
     // Should also have list of activities
