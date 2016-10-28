@@ -6,8 +6,8 @@ import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public interface CostI {
-  public static double getCostDollars(BookStore bookStoreIn);
-  public static double getCostDollars(CampusTour tourIn);
-  public static double getCostDollars(DormSelector dormIn);
-  public static double getCostDollars(Registration registrationIn);
+  public void addCostDollars(BookStore bookStoreIn);
+  public void addCostDollars(CampusTour tourIn);
+  public void addCostDollars(DormSelector dormIn);
+  public void addCostDollars(Registration registrationIn);
 }

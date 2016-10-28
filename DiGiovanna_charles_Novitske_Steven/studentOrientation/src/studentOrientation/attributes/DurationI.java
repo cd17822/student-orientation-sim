@@ -6,8 +6,8 @@ import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public interface DurationI {
-  public static double getDurationMinutes(BookStore bookStoreIn);
-  public static double getDurationMinutes(CampusTour tourIn);
-  public static double getDurationMinutes(DormSelector dormIn);
-  public static double getDurationMinutes(Registration registrationIn);
+  public void addDurationMinutes(BookStore bookStoreIn);
+  public void addDurationMinutes(CampusTour tourIn);
+  public void addDurationMinutes(DormSelector dormIn);
+  public void addDurationMinutes(Registration registrationIn);
 }

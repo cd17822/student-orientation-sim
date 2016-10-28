@@ -6,8 +6,8 @@ import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public interface CarbonFootprintI {
-  public static double getFootprintTonnes(BookStore bookStoreIn);
-  public static double getFootprintTonnes(CampusTour tourIn);
-  public static double getFootprintTonnes(DormSelector dormIn);
-  public static double getFootprintTonnes(Registration registrationIn);
+  public void addFootprintTonnes(BookStore bookStoreIn);
+  public void addFootprintTonnes(CampusTour tourIn);
+  public void addFootprintTonnes(DormSelector dormIn);
+  public void addFootprintTonnes(Registration registrationIn);
 }
