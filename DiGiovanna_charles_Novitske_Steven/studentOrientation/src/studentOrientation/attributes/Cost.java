@@ -21,13 +21,13 @@ public class Cost implements CostI {
   public static double getCostDollars(DormSelector dormIn) {
     if(activityIn == DormSelector.standOutside) { value = 10; }
     else if(activityIn == DormSelector.gamingContest) {
-      value = getCostDollars(DormSelector.standOutside * 1.02); }
+      value = getCostDollars(DormSelector.standOutside) * 1.02; }
     return value;
   }
   public static double getCostDollars(Registration registrationIn) {
     if(activityIn == Registration.computerLab) { value = 150; }
     else if(activityIn == Registration.registrar) {
-      value = getCostDollars(Registration.computerLab * 0.97); }
+      value = getCostDollars(Registration.computerLab) * 0.97; }
     return value;
   }
 }
