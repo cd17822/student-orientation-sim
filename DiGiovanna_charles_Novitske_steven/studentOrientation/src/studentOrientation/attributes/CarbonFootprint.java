@@ -8,11 +8,15 @@ import studentOrientation.enums.Registration;
 
 public class CarbonFootprint implements CarbonFootprintI {
   double value = 0;
-
+  /**
+   * CarbonFootprint constructor
+   */
   public CarbonFootprint() {
     Logger.writeMessage("CarbonFootprint constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
-
+  /**
+   * @return CarbonFootprint data as a String
+   */
   public String toStringTonnes() {
     return value + " CO2 tonnes";
   }

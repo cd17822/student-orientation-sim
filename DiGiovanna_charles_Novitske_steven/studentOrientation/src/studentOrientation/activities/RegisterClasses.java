@@ -15,7 +15,9 @@ public class RegisterClasses implements RegisterClassesI {
     DurationI duration;
     CarbonFootprintI carbonFootprint;
     EffortI effort;
-
+    /**
+     * RegisterClasses constructor
+     */
     public RegisterClasses(Registration registrationIn,
                       CostI costIn,
                       DurationI durationIn,
@@ -29,7 +31,9 @@ public class RegisterClasses implements RegisterClassesI {
         carbonFootprint = carbonFootprintIn;
         effort = effortIn;
     }
-
+    /**
+     * @return RegisterClasses data as a String
+     */
     public String toString() {
       String name;
 

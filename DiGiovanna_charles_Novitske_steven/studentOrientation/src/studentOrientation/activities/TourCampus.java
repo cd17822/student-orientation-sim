@@ -15,7 +15,9 @@ public class TourCampus implements TourCampusI {
     DurationI duration;
     CarbonFootprintI carbonFootprint;
     EffortI effort;
-
+    /**
+     * TourCampus constructor
+     */
     public TourCampus(CampusTour campusTourIn,
                       CostI costIn,
                       DurationI durationIn,
@@ -29,7 +31,9 @@ public class TourCampus implements TourCampusI {
         carbonFootprint = carbonFootprintIn;
         effort = effortIn;
     }
-
+    /**
+     * @return TourCampus data as a String
+     */
     public String toString() {
       String name;
 

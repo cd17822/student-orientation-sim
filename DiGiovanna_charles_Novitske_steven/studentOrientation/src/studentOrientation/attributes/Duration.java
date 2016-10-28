@@ -8,11 +8,15 @@ import studentOrientation.enums.Registration;
 
 public class Duration implements DurationI {
   double value = 0;
-
+  /**
+   * Duration constructor
+   */
   public Duration() {
     Logger.writeMessage("Duration constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
-
+  /**
+   * @return Duration data as a String
+   */
   public String toStringMinutes() {
     return value + " minutes";
   }

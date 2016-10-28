@@ -14,7 +14,9 @@ public class BuyBooks implements BuyBooksI {
     DurationI duration;
     CarbonFootprintI carbonFootprint;
     EffortI effort;
-
+    /**
+     * BuyBooks constructor
+     */
     public BuyBooks(BookStore bookStoreIn,
                       CostI costIn,
                       DurationI durationIn,
@@ -28,7 +30,9 @@ public class BuyBooks implements BuyBooksI {
         carbonFootprint = carbonFootprintIn;
         effort = effortIn;
     }
-
+    /**
+     * @return BuyBooks data as a String
+     */
     public String toString() {
       String name;
 

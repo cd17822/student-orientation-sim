@@ -8,11 +8,15 @@ import studentOrientation.enums.Registration;
 
 public class Cost implements CostI {
   double value = 0;
-
+  /**
+   * Cost constructor
+   */
   public Cost() {
     Logger.writeMessage("Cost constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
-
+  /**
+   * @return Cost data as a String
+   */
   public String toStringDollars() {
     return String.format("$%.2f", value) + " USD";
   }

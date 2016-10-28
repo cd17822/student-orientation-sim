@@ -8,11 +8,15 @@ import studentOrientation.enums.Registration;
 
 public class Effort implements EffortI {
   double value = 0;
-
+  /**
+   * Effor constructor
+   */
   public Effort() {
     Logger.writeMessage("Effort constructed\n", Logger.DebugLevel.CONSTRUCTOR);
   }
-
+  /**
+   * @return Effort data as a String
+   */
   public String toStringCalories() {
     return value + " calories";
   }

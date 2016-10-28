@@ -15,7 +15,9 @@ public class SelectDorm implements SelectDormI {
     DurationI duration;
     CarbonFootprintI carbonFootprint;
     EffortI effort;
-
+    /**
+     * SelectDorm constructor
+     */
     public SelectDorm(DormSelector dormSelectorIn,
                       CostI costIn,
                       DurationI durationIn,
@@ -29,7 +31,8 @@ public class SelectDorm implements SelectDormI {
         carbonFootprint = carbonFootprintIn;
         effort = effortIn;
     }
-
+    /**
+     */
     public String toString() {
       String name;
 

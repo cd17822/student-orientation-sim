@@ -32,7 +32,9 @@ public class BUOrientation implements OrientationI {
     private CarbonFootprintI carbonFootprint = new CarbonFootprint();
     private CostI cost = new Cost();
     private EffortI effort = new Effort();
-
+    /**
+     * BUOrientation constructor
+     */
     public BUOrientation(BookStore storeIn,
                          CampusTour tourIn,
                          DormSelector dormIn,
@@ -45,7 +47,10 @@ public class BUOrientation implements OrientationI {
         registrationActivity = new RegisterClasses(regIn, cost, duration, carbonFootprint, effort);
     }
 
-    // Should also have list of activities
+    /**
+     * @returns the String to be outputted to terminal
+     * containing all Orientation choices and results
+     */
     public String toString() {
         String s = "BUOrientation with activities:" +
                    "\n    campus tour: " + tourActivity.toString() +
