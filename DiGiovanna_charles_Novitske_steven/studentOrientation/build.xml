@@ -50,7 +50,7 @@
 
     <target name="tarzip" >
         <delete file="./DiGiovanna_Charles_Novitske_Steven.tar" quiet="true" />
-        <tar destfile="${BUILD}/dist/DiGiovanna_Charles_Novitske_Steven.tar.gz" basedir="../../" compression="gzip"/>
+        <tar destfile="${BUILD}/dist/DiGiovanna_Charles_Novitske_Steven.tar.gz" basedir="../" compression="gzip"/>
     </target>
 
 </project>
