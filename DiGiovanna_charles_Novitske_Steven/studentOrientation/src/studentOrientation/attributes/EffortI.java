@@ -1,6 +1,6 @@
 package studentOrientation.attributes;
 
-import enums.Activities;
+import studentOrientation.enums.Activities;
 
 public interface EffortI {
   public static double getEffortCalories(Activities activityIn);

@@ -1,18 +1,18 @@
 package studentOrientation.attributes;
 
-import enums.Activities;
+import studentOrientation.enums.Activities;
 
 public class Effort implements EffortI {
   public static double getEffortCalories(Activities activityIn) {
     double calories;
     if(activityIn == Activities.mandoBooks) { calories = 30; }
-    else if(activityIn == Activites.buBookStore) { calories = 30; }
-    else if(activityIn == Activites.busRide) { calories = 5; }
-    else if(activityIn == Activites.onFoot) { calories = 250; }
-    else if(activityIn == Activites.standOutside) { calories = 75; }
-    else if(activityIn == Activites.gamingContest) { calories = 5; }
-    else if(activityIn == Activites.computerLab) { calories = 15; }
-    else if(activityIn == Activites.registrar) { calories = 25; }
+    else if(activityIn == Activities.buBookStore) { calories = 30; }
+    else if(activityIn == Activities.busRide) { calories = 5; }
+    else if(activityIn == Activities.onFoot) { calories = 250; }
+    else if(activityIn == Activities.standOutside) { calories = 75; }
+    else if(activityIn == Activities.gamingContest) { calories = 5; }
+    else if(activityIn == Activities.computerLab) { calories = 15; }
+    else if(activityIn == Activities.registrar) { calories = 25; }
 
     return calories;
   }

@@ -1,8 +1,12 @@
 package studentOrientation.activities;
 
 import studentOrientation.enums.BookStore;
+import studentOrientation.attributes.Duration;
+import studentOrientation.attributes.Cost;
+import studentOrientation.attributes.CarbonFootprint;
+import studentOrientation.attributes.Effort;
 
-public class BookStore implements BookStoreI {
+public class BuyBooks implements BuyBooksI {
     public void getCost(BookStore bookStoreIn) {
       return Cost.getCostDollars(bookStoreIn);
     }
