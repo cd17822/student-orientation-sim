@@ -1,24 +1,13 @@
 package studentOrientation.attributes;
 
-import studentOrientation.enums.Activities;
+import studentOrientation.enums.BookStore;
+import studentOrientation.enums.CampusTour;
+import studentOrientation.enums.DormSelector;
+import studentOrientation.enums.Registration;
 
 public interface DurationI {
-  public static double getDurationMinutes(Activities activityIn);
-  /*
-    // CampusTour
-    public static double busRide = 45;
-    public static double onFoot = 90;
-
-    // BookStore
-    public static double mandoBooks = 15;
-    public static double buBookStore = 25;
-
-    // DormSelector
-    public static double standOutside = 120;
-    public static double gamingContest = 45;
-
-    // Registration
-    public static double registrar = 15;
-    public static double computerLab = 15;
-  */
+  public static double getDurationMinutes(BookStore bookStoreIn);
+  public static double getDurationMinutes(CampusTour tourIn);
+  public static double getDurationMinutes(DormSelector dormIn);
+  public static double getDurationMinutes(Registration registrationIn);
 }

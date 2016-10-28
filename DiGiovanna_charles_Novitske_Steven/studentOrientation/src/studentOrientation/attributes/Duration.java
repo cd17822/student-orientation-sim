@@ -1,9 +1,12 @@
 package studentOrientation.attributes;
 
-import studentOrientation.enums.Activities;
+import studentOrientation.enums.BookStore;
+import studentOrientation.enums.CampusTour;
+import studentOrientation.enums.DormSelector;
+import studentOrientation.enums.Registration;
 
 public class Duration implements DurationI {
-  public static double getDurationMinutes(Activities activityIn) {
+  public static double getDurationMinutes(BookStore bookStoreIn) {
     double minutes;
     if(activityIn == Activities.mandoBooks) { minutes = 15; }
     else if(activityIn == Activities.buBookStore) { minutes = 25; }

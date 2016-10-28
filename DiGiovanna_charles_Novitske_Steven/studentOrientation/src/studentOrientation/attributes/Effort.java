@@ -1,6 +1,9 @@
 package studentOrientation.attributes;
 
-import studentOrientation.enums.Activities;
+import studentOrientation.enums.BookStore;
+import studentOrientation.enums.CampusTour;
+import studentOrientation.enums.DormSelector;
+import studentOrientation.enums.Registration;
 
 public class Effort implements EffortI {
   public static double getEffortCalories(Activities activityIn) {
