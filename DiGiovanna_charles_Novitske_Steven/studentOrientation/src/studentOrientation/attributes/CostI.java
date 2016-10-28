@@ -1,5 +1,7 @@
 package studentOrientation.attributes;
 
+import enums.Activities;
+
 public interface CostI {
   public double getCostDollars(Activities activityIn);
   /*

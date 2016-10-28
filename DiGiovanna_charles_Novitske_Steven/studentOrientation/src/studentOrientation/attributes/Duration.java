@@ -1,22 +1,19 @@
 package studentOrientation.attributes;
 
-public interface Duration {
-  public double getDurationMinutes(Activities activityIn);
-  /*
-    // CampusTour
-    public static double busRide = 45;
-    public static double onFoot = 90;
+import enums.Activities;
 
-    // BookStore
-    public static double mandoBooks = 15;
-    public static double buBookStore = 25;
+public class Duration implements DurationI {
+  public double getDurationMinutes(Activities activityIn) {
+    double minutes;
+    if(activityIn == Activities.mandoBooks) { minutes = 15; }
+    else if(activityIn == Activites.buBookStore) { minutes = 25; }
+    else if(activityIn == Activites.busRide) { minutes = 45; }
+    else if(activityIn == Activites.onFoot) { minutes = 90; }
+    else if(activityIn == Activites.standOutside) { minutes = 120; }
+    else if(activityIn == Activites.gamingContest) { minutes = 45; }
+    else if(activityIn == Activites.computerLab) { minutes = 15; }
+    else if(activityIn == Activites.registrar) { minutes = 15; }
 
-    // DormSelector
-    public static double standOutside = 120;
-    public static double gamingContest = 45;
-
-    // Registration
-    public static double registrar = 15;
-    public static double computerLab = 15;
-  */
+    return minutes;
+  }
 }

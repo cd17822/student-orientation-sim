@@ -1,5 +1,7 @@
 package studentOrientation.attributes;
 
+import enums.Activities;
+
 public interface CarbonFootprintI {
   public double getFootprintTonnes(Activities activityIn);
   /*
