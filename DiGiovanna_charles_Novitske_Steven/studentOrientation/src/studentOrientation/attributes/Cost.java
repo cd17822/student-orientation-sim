@@ -7,27 +7,26 @@ import studentOrientation.enums.Registration;
 
 public class Cost implements CostI {
   double value;
+  public Cost() {
+    value = 0;
+  }
   public void addCostDollars(BookStore bookStoreIn) {
-    if(activityIn == BookStore.mandoBooks) { value = 200; }
-    else if(activityIn == BookStore.buBookStore) {
-      value = addCostDollars(BookStore.mandoBooks) * 1.05; }
-    return value;
+    double mandoPrice = 200;
+    if(activityIn == BookStore.mandoBooks) { value += mandoBooks; }
+    else if(activityIn == BookStore.buBookStore) { value += mandoPrice * 1.05; }
   }
   public void addCostDollars(CampusTour tourIn) {
-    if(activityIn == CampusTour.busRide) { value = 2; }
-    else if(activityIn == CampusTour.onFoot) { value = 0.10; }
-    return value;
+    if(activityIn == CampusTour.busRide) { value += 2; }
+    else if(activityIn == CampusTour.onFoot) { value += 0.10; }
   }
   public void addCostDollars(DormSelector dormIn) {
-    if(activityIn == DormSelector.standOutside) { value = 10; }
-    else if(activityIn == DormSelector.gamingContest) {
-      value = addCostDollars(DormSelector.standOutside) * 1.02; }
-    return value;
+    double standPrice = 10;
+    if(activityIn == DormSelector.standOutside) { value += standPrice; }
+    else if(activityIn == DormSelector.gamingContest) { value += standPrice * 1.02; }
   }
   public void addCostDollars(Registration registrationIn) {
-    if(activityIn == Registration.computerLab) { value = 150; }
-    else if(activityIn == Registration.registrar) {
-      value = addCostDollars(Registration.computerLab) * 0.97; }
-    return value;
+    double labPrice = 150;
+    if(activityIn == Registration.computerLab) { value += labPrice; }
+    else if(activityIn == Registration.registrar) { value += labPrice * 0.97; }
   }
 }

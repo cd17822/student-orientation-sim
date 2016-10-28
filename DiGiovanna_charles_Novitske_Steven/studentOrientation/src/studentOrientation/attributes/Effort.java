@@ -7,24 +7,23 @@ import studentOrientation.enums.Registration;
 
 public class Effort implements EffortI {
   double value;
+  public Effort() {
+    value = 0;
+  }
   public void addEffortCalories(BookStore bookStoreIn) {
-    if(activityIn == BookStore.mandoBooks) { calories = 30; }
-    else if(activityIn == BookStore.buBookStore) { calories = 30; }
-    return value;
+    if(activityIn == BookStore.mandoBooks) { value += 30; }
+    else if(activityIn == BookStore.buBookStore) { value += 30; }
   }
   public void addEffortCalories(CampusTour tourIn) {
-    if(activityIn == CampusTour.busRide) { calories = 5; }
-    else if(activityIn == CampusTour.onFoot) { calories = 250; }
-    return value;
+    if(activityIn == CampusTour.busRide) { value += 5; }
+    else if(activityIn == CampusTour.onFoot) { value += 250; }
   }
   public void addEffortCalories(DormSelector dormIn) {
-    if(activityIn == DormSelector.standOutside) { calories = 75; }
-    else if(activityIn == DormSelector.gamingContest) { calories = 5; }
-    return value;
+    if(activityIn == DormSelector.standOutside) { value += 75; }
+    else if(activityIn == DormSelector.gamingContest) { value += 5; }
   }
   public void addEffortCalories(Registration registrationIn) {
-    if(activityIn == Registration.computerLab) { calories = 15; }
-    else if(activityIn == Registration.registrar) { calories = 25; }
-    return calories;
+    if(activityIn == Registration.computerLab) { value += 15; }
+    else if(activityIn == Registration.registrar) { value += 25; }
   }
 }

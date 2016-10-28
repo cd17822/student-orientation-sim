@@ -7,24 +7,23 @@ import studentOrientation.enums.Registration;
 
 public class Duration implements DurationI {
   double value;
+  public Duration() {
+    value = 0;
+  }
   public void addDurationMinutes(BookStore bookStoreIn) {
-    if(activityIn == BookStore.mandoBooks) { minutes = 15; }
-    else if(activityIn == BookStore.buBookStore) { minutes = 25; }
-    return value;
+    if(activityIn == BookStore.mandoBooks) { value += 15; }
+    else if(activityIn == BookStore.buBookStore) { value += 25; }
   }
   public void addDurationMinutes(CampusTour tourIn) {
-    if(activityIn == CampusTour.busRide) { minutes = 45; }
-    else if(activityIn == CampusTour.onFoot) { minutes = 90; }
-    return value;
+    if(activityIn == CampusTour.busRide) { value += 45; }
+    else if(activityIn == CampusTour.onFoot) { value += 90; }
   }
   public void addDurationMinutes(DormSelector dormIn) {
-    if(activityIn == DormSelector.standOutside) { minutes = 120; }
-    else if(activityIn == DormSelector.gamingContest) { minutes = 45; }
-    return value;
+    if(activityIn == DormSelector.standOutside) { value += 120; }
+    else if(activityIn == DormSelector.gamingContest) { value += 45; }
   }
   public void addDurationMinutes(Registration registrationIn) {
-    if(activityIn == Registration.computerLab) { minutes = 15; }
-    else if(activityIn == Registration.registrar) { minutes = 15; }
-    return minutes;
+    if(activityIn == Registration.computerLab) { value += 15; }
+    else if(activityIn == Registration.registrar) { value += 15; }
   }
 }
