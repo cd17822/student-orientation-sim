@@ -32,6 +32,7 @@ public class SelectDorm implements SelectDormI {
         effort = effortIn;
     }
     /**
+     * @return SelectDorm data as a String
      */
     public String toString() {
       String name;

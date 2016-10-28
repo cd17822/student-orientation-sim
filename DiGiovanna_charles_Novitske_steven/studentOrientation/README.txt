@@ -37,6 +37,7 @@ FILES:
     EffortI.java
   driver/      --Driver code with main
     Driver.java
+  enums/       --Library of the acceptable enums
     BookStore.java
     CampusTour.java
     DormSelector.java
