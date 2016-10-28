@@ -15,10 +15,10 @@ public class Driver{
 
     public static void main(String[] args) {
         OrientationWorkshopI shop = new BUOrientationWorkshop();
-        OrientationI o = new BUOrientation(BookStore.mandoBooks,
-                                           CampusTour.onFoot,
-                                           DormSelector.standOutside,
-                                           Registration.computerLab);
+        OrientationI o = new BUOrientation(BookStore.buBookStore,
+                                           CampusTour.busRide,
+                                           DormSelector.gamingContest,
+                                           Registration.registrar);
         shop.construct(o);
         System.out.println(o.toString());
     }

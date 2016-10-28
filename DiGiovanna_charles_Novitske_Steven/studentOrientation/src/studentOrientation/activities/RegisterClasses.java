@@ -31,8 +31,8 @@ public class RegisterClasses implements RegisterClassesI {
       String name;
 
       switch (registration) {
-        case computerLab : name = "Computer Lab";
-        case registrar   : name = "Registrar";
+        case computerLab : name = "Computer Lab"; break;
+        case registrar   : name = "Registrar"; break;
         default          : name = "";
       }
 

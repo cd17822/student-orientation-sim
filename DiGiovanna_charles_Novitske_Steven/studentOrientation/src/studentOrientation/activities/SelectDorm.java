@@ -31,8 +31,8 @@ public class SelectDorm implements SelectDormI {
       String name;
 
       switch (dormSelector) {
-        case standOutside  : name = "Stand Outside";
-        case gamingContest : name = "Gaming Contest";
+        case standOutside  : name = "Stand Outside"; break;
+        case gamingContest : name = "Gaming Contest"; break;
         default            : name = "";
       }
 

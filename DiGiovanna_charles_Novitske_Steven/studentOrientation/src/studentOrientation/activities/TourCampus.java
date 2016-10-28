@@ -31,8 +31,8 @@ public class TourCampus implements TourCampusI {
       String name;
 
       switch (campusTour) {
-        case busRide : name = "Bus Ride";
-        case onFoot  : name = "On Foot";
+        case busRide : name = "Bus Ride"; break;
+        case onFoot  : name = "On Foot"; break;
         default      : name = "";
       }
 

@@ -31,8 +31,8 @@ public class BuyBooks implements BuyBooksI {
       String name;
 
       switch (bookStore) {
-        case mandoBooks  : name = "Mando Books";
-        case buBookStore : name = "BU Book Store";
+        case mandoBooks  : name = "Mando Books"; break;
+        case buBookStore : name = "BU Book Store"; break;
         default          : name = "";
       }
 
