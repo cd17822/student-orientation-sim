@@ -10,20 +10,23 @@ public class Duration implements DurationI {
   public Duration() {
     value = 0;
   }
+  public String toStringMinutes() {
+    return value + " minutes";
+  }
   public void addDurationMinutes(BookStore bookStoreIn) {
-    if(activityIn == BookStore.mandoBooks) { value += 15; }
-    else if(activityIn == BookStore.buBookStore) { value += 25; }
+    if(bookStoreIn == BookStore.mandoBooks) { value += 15; }
+    else if(bookStoreIn == BookStore.buBookStore) { value += 25; }
   }
   public void addDurationMinutes(CampusTour tourIn) {
-    if(activityIn == CampusTour.busRide) { value += 45; }
-    else if(activityIn == CampusTour.onFoot) { value += 90; }
+    if(tourIn == CampusTour.busRide) { value += 45; }
+    else if(tourIn == CampusTour.onFoot) { value += 90; }
   }
   public void addDurationMinutes(DormSelector dormIn) {
-    if(activityIn == DormSelector.standOutside) { value += 120; }
-    else if(activityIn == DormSelector.gamingContest) { value += 45; }
+    if(dormIn == DormSelector.standOutside) { value += 120; }
+    else if(dormIn == DormSelector.gamingContest) { value += 45; }
   }
   public void addDurationMinutes(Registration registrationIn) {
-    if(activityIn == Registration.computerLab) { value += 15; }
-    else if(activityIn == Registration.registrar) { value += 15; }
+    if(registrationIn == Registration.computerLab) { value += 15; }
+    else if(registrationIn == Registration.registrar) { value += 15; }
   }
 }

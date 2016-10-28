@@ -10,6 +10,11 @@ public class CarbonFootprint implements CarbonFootprintI {
   public CarbonFootprint() {
     value = 0;
   }
+
+  public String toStringTonnes() {
+    return value + " CO2 tonnes";
+  }
+
   public void addFootprintTonnes(BookStore bookStoreIn) {
     if(bookStoreIn == BookStore.mandoBooks) { value += 0.02; }
     else if(bookStoreIn == BookStore.buBookStore) { value += 0; }

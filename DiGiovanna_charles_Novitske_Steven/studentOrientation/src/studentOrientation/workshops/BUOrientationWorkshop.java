@@ -1,6 +1,5 @@
 package studentOrientation.workshops;
 
-import studentOrientation.activities.ActivityI;
 import studentOrientation.orientations.OrientationI;
 
 public class BUOrientationWorkshop implements OrientationWorkshopI {

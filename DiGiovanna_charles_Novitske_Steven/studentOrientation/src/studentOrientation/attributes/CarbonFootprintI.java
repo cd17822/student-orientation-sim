@@ -6,6 +6,7 @@ import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public interface CarbonFootprintI {
+  public String toStringTonnes();
   public void addFootprintTonnes(BookStore bookStoreIn);
   public void addFootprintTonnes(CampusTour tourIn);
   public void addFootprintTonnes(DormSelector dormIn);

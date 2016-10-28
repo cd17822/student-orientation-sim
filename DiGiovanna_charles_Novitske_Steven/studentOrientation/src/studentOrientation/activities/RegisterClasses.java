@@ -1,26 +1,26 @@
 package studentOrientation.activities;
 
-import studentOrientation.activities.BuyBooksI;
-import studentOrientation.enums.BookStore;
+import studentOrientation.activities.RegisterClassesI;
+import studentOrientation.enums.Registration;
 import studentOrientation.attributes.DurationI;
 import studentOrientation.attributes.CostI;
 import studentOrientation.attributes.CarbonFootprintI;
 import studentOrientation.attributes.EffortI;
 
-public class BuyBooks implements BuyBooksI {
-    BookStore bookStore;
+public class RegisterClasses implements RegisterClassesI {
+    Registration registration;
 
     CostI cost;
     DurationI duration;
     CarbonFootprintI carbonFootprint;
     EffortI effort;
 
-    public BuyBooks(BookStore bookStoreIn,
+    public RegisterClasses(Registration registrationIn,
                       CostI costIn,
                       DurationI durationIn,
                       CarbonFootprintI carbonFootprintIn,
                       EffortI effortIn) {
-        bookStore = bookStoreIn;
+        registration = registrationIn;
         cost = costIn;
         duration = durationIn;
         carbonFootprint = carbonFootprintIn;
@@ -30,9 +30,9 @@ public class BuyBooks implements BuyBooksI {
     public String toString() {
       String name;
 
-      switch (bookStore) {
-        case mandoBooks  : name = "Mando Books";
-        case buBookStore : name = "BU Book Store";
+      switch (registration) {
+        case computerLab : name = "Computer Lab";
+        case registrar   : name = "Registrar";
         default          : name = "";
       }
 
@@ -40,9 +40,9 @@ public class BuyBooks implements BuyBooksI {
     }
 
     public void embark() {
-      cost.addCostDollars(bookStore);
-      effort.addEffortCalories(bookStore);
-      carbonFootprint.addFootprintTonnes(bookStore);
-      duration.addDurationMinutes(bookStore);
+      cost.addCostDollars(registration);
+      effort.addEffortCalories(registration);
+      carbonFootprint.addFootprintTonnes(registration);
+      duration.addDurationMinutes(registration);
     }
 }

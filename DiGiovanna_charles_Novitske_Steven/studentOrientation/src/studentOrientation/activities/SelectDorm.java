@@ -1,26 +1,26 @@
 package studentOrientation.activities;
 
-import studentOrientation.activities.BuyBooksI;
-import studentOrientation.enums.BookStore;
+import studentOrientation.activities.SelectDormI;
+import studentOrientation.enums.DormSelector;
 import studentOrientation.attributes.DurationI;
 import studentOrientation.attributes.CostI;
 import studentOrientation.attributes.CarbonFootprintI;
 import studentOrientation.attributes.EffortI;
 
-public class BuyBooks implements BuyBooksI {
-    BookStore bookStore;
+public class SelectDorm implements SelectDormI {
+    DormSelector dormSelector;
 
     CostI cost;
     DurationI duration;
     CarbonFootprintI carbonFootprint;
     EffortI effort;
 
-    public BuyBooks(BookStore bookStoreIn,
+    public SelectDorm(DormSelector dormSelectorIn,
                       CostI costIn,
                       DurationI durationIn,
                       CarbonFootprintI carbonFootprintIn,
                       EffortI effortIn) {
-        bookStore = bookStoreIn;
+        dormSelector = dormSelectorIn;
         cost = costIn;
         duration = durationIn;
         carbonFootprint = carbonFootprintIn;
@@ -30,19 +30,19 @@ public class BuyBooks implements BuyBooksI {
     public String toString() {
       String name;
 
-      switch (bookStore) {
-        case mandoBooks  : name = "Mando Books";
-        case buBookStore : name = "BU Book Store";
-        default          : name = "";
+      switch (dormSelector) {
+        case standOutside  : name = "Stand Outside";
+        case gamingContest : name = "Gaming Contest";
+        default            : name = "";
       }
 
       return name;
     }
 
     public void embark() {
-      cost.addCostDollars(bookStore);
-      effort.addEffortCalories(bookStore);
-      carbonFootprint.addFootprintTonnes(bookStore);
-      duration.addDurationMinutes(bookStore);
+      cost.addCostDollars(dormSelector);
+      effort.addEffortCalories(dormSelector);
+      carbonFootprint.addFootprintTonnes(dormSelector);
+      duration.addDurationMinutes(dormSelector);
     }
 }

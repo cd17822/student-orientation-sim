@@ -6,6 +6,7 @@ import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public interface DurationI {
+  public String toStringMinutes();
   public void addDurationMinutes(BookStore bookStoreIn);
   public void addDurationMinutes(CampusTour tourIn);
   public void addDurationMinutes(DormSelector dormIn);

@@ -1,26 +1,26 @@
 package studentOrientation.activities;
 
-import studentOrientation.activities.BuyBooksI;
-import studentOrientation.enums.BookStore;
+import studentOrientation.activities.TourCampusI;
+import studentOrientation.enums.CampusTour;
 import studentOrientation.attributes.DurationI;
 import studentOrientation.attributes.CostI;
 import studentOrientation.attributes.CarbonFootprintI;
 import studentOrientation.attributes.EffortI;
 
-public class BuyBooks implements BuyBooksI {
-    BookStore bookStore;
+public class TourCampus implements TourCampusI {
+    CampusTour campusTour;
 
     CostI cost;
     DurationI duration;
     CarbonFootprintI carbonFootprint;
     EffortI effort;
 
-    public BuyBooks(BookStore bookStoreIn,
+    public TourCampus(CampusTour campusTourIn,
                       CostI costIn,
                       DurationI durationIn,
                       CarbonFootprintI carbonFootprintIn,
                       EffortI effortIn) {
-        bookStore = bookStoreIn;
+        campusTour = campusTourIn;
         cost = costIn;
         duration = durationIn;
         carbonFootprint = carbonFootprintIn;
@@ -30,19 +30,19 @@ public class BuyBooks implements BuyBooksI {
     public String toString() {
       String name;
 
-      switch (bookStore) {
-        case mandoBooks  : name = "Mando Books";
-        case buBookStore : name = "BU Book Store";
-        default          : name = "";
+      switch (campusTour) {
+        case busRide : name = "Bus Ride";
+        case onFoot  : name = "On Foot";
+        default      : name = "";
       }
 
       return name;
     }
 
     public void embark() {
-      cost.addCostDollars(bookStore);
-      effort.addEffortCalories(bookStore);
-      carbonFootprint.addFootprintTonnes(bookStore);
-      duration.addDurationMinutes(bookStore);
+      cost.addCostDollars(campusTour);
+      effort.addEffortCalories(campusTour);
+      carbonFootprint.addFootprintTonnes(campusTour);
+      duration.addDurationMinutes(campusTour);
     }
 }

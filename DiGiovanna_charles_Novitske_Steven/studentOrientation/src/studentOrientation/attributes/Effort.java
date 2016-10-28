@@ -10,20 +10,23 @@ public class Effort implements EffortI {
   public Effort() {
     value = 0;
   }
+  public String toStringCalories() {
+    return value + " calories";
+  }
   public void addEffortCalories(BookStore bookStoreIn) {
-    if(activityIn == BookStore.mandoBooks) { value += 30; }
-    else if(activityIn == BookStore.buBookStore) { value += 30; }
+    if(bookStoreIn == BookStore.mandoBooks) { value += 30; }
+    else if(bookStoreIn == BookStore.buBookStore) { value += 30; }
   }
   public void addEffortCalories(CampusTour tourIn) {
-    if(activityIn == CampusTour.busRide) { value += 5; }
-    else if(activityIn == CampusTour.onFoot) { value += 250; }
+    if(tourIn == CampusTour.busRide) { value += 5; }
+    else if(tourIn == CampusTour.onFoot) { value += 250; }
   }
   public void addEffortCalories(DormSelector dormIn) {
-    if(activityIn == DormSelector.standOutside) { value += 75; }
-    else if(activityIn == DormSelector.gamingContest) { value += 5; }
+    if(dormIn == DormSelector.standOutside) { value += 75; }
+    else if(dormIn == DormSelector.gamingContest) { value += 5; }
   }
   public void addEffortCalories(Registration registrationIn) {
-    if(activityIn == Registration.computerLab) { value += 15; }
-    else if(activityIn == Registration.registrar) { value += 25; }
+    if(registrationIn == Registration.computerLab) { value += 15; }
+    else if(registrationIn == Registration.registrar) { value += 25; }
   }
 }

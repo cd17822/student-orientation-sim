@@ -1,6 +1,6 @@
 package studentOrientation.activities;
 
-public interface BuyBooksI {
+public interface SelectDormI {
     public String toString();
     public void embark();
 }

@@ -6,6 +6,7 @@ import studentOrientation.enums.DormSelector;
 import studentOrientation.enums.Registration;
 
 public interface CostI {
+  public String toStringDollars();
   public void addCostDollars(BookStore bookStoreIn);
   public void addCostDollars(CampusTour tourIn);
   public void addCostDollars(DormSelector dormIn);
