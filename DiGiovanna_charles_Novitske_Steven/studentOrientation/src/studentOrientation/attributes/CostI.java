@@ -3,7 +3,7 @@ package studentOrientation.attributes;
 import enums.Activities;
 
 public interface CostI {
-  public double getCostDollars(Activities activityIn);
+  public static double getCostDollars(Activities activityIn);
   /*
     // CampusTour
     public static double busRide = 2;

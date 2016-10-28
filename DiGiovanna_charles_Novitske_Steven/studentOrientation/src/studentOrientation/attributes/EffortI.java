@@ -3,7 +3,7 @@ package studentOrientation.attributes;
 import enums.Activities;
 
 public interface EffortI {
-  public double getEffortCalories(Activities activityIn);
+  public static double getEffortCalories(Activities activityIn);
   /*
     // CampusTour
     public static double busRide = 5;

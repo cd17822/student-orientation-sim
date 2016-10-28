@@ -3,7 +3,7 @@ package studentOrientation.attributes;
 import enums.Activities;
 
 public class Effort implements EffortI {
-  public double getEffortCalories(Activities activityIn) {
+  public static double getEffortCalories(Activities activityIn) {
     double calories;
     if(activityIn == Activities.mandoBooks) { calories = 30; }
     else if(activityIn == Activites.buBookStore) { calories = 30; }

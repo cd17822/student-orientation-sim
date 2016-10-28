@@ -3,7 +3,7 @@ package studentOrientation.attributes;
 import enums.Activities;
 
 public interface DurationI {
-  public double getDurationMinutes(Activities activityIn);
+  public static double getDurationMinutes(Activities activityIn);
   /*
     // CampusTour
     public static double busRide = 45;

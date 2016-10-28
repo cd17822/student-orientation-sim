@@ -3,7 +3,7 @@ package studentOrientation.attributes;
 import enums.Activities;
 
 public class Cost implements CostI {
-  public double getCostDollars(Activities activityIn) {
+  public static double getCostDollars(Activities activityIn) {
     double dollars = 0;
     if(activityIn == Activities.mandoBooks) { dollars = 200; }
     else if(activityIn == Activites.buBookStore) {

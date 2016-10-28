@@ -3,7 +3,7 @@ package studentOrientation.attributes;
 import enums.Activities;
 
 public class Duration implements DurationI {
-  public double getDurationMinutes(Activities activityIn) {
+  public static double getDurationMinutes(Activities activityIn) {
     double minutes;
     if(activityIn == Activities.mandoBooks) { minutes = 15; }
     else if(activityIn == Activites.buBookStore) { minutes = 25; }

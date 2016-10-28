@@ -3,7 +3,7 @@ package studentOrientation.attributes;
 import enums.Activities;
 
 public class CarbonFootprint implements CarbonFootprintI {
-  public double getFootprintTonnes(Activities activityIn) {
+  public static double getFootprintTonnes(Activities activityIn) {
     double tonnes = 0;
     if(activityIn == Activities.mandoBooks) { tonnes = 0.02; }
     else if(activityIn == Activites.buBookStore) { tonnes = 0; }
